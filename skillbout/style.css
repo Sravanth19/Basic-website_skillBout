@@ -1,0 +1,169 @@
+/* Reset default browser margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navbar/Header styling */
+.navbar {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px; /* Adjusted padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  /* From the image, the logo "sravanth" appears to be plain text, not a button. */
+  /* If it's a link, you'd wrap it in an <a> tag. */
+}
+
+.nav-links button {
+  background-color: #222; /* Match navbar background for seamless look */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 0; /* Remove border-radius to match the image's sharp edges */
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* Match the capitalized text in the image */
+}
+
+.nav-links button:hover {
+  background-color: #444; /* Slightly lighter on hover */
+}
+
+.search-bar-container {
+  margin-left: auto; /* Push the search bar to the right */
+  padding-left: 20px; /* Add some space between nav links and search bar */
+}
+
+.search-bar {
+  width: 250px; /* Approximate width of Google search bar */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners like Google search bar */
+  font-size: 14px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #111827;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.food-table {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.food-table img {
+  width: 90%;
+  max-width: 600px;
+  height: 250px; /* Set a fixed height as in your original HTML */
+  object-fit: cover; /* Ensure image covers the area without distortion */
+  border-radius: 10px;
+}
+
+.food-items {
+  padding: 40px 20px;
+  text-align: center;
+}
+.food-items h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-links button {
+    margin: 5px 0;
+  }
+  .search-bar-container {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .search-bar {
+    width: 90%;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .food-items h2 {
+    font-size: 24px;
+  }
+}
